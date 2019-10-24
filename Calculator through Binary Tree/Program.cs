@@ -10,12 +10,8 @@ namespace Calculator_through_Binary_Tree
     {
         static void Main(string[] args)
         {
-            if (args is null)
-            {
-                throw new ArgumentNullException(nameof(args));
-            }
-
-            string s = "2^(x+1)^(y+1)";
+            // sort out more complex examples
+            string s = "2+2";
             ExpressionTree e = ExpressionTree.Build(s);
             ExprVarValue[] vars = { new ExprVarValue("x", 2), new ExprVarValue("y", 3) };
             Console.WriteLine(s);
